@@ -7,10 +7,12 @@ const Navbar = () => {
 	return (
 		<StyledNav>
 			<div className='center'>
-				<img src={logo} alt='cardioclinic logo' className='logo' />
-				<button className='toggle-btn'>
-					<BiMenu />
-				</button>
+				<div className='content'>
+					<img src={logo} alt='cardioclinic logo' className='logo' />
+					<button className='toggle-btn'>
+						<BiMenu />
+					</button>
+				</div>
 			</div>
 		</StyledNav>
 	);
@@ -29,14 +31,13 @@ const StyledNav = styled.nav`
 
 	background: transparent;
 
-	.center {
+	.content {
 		flex-grow: 1; // chi
 
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-
-		margin: 0 2.5rem;
+		height: 100%;
 	}
 
 	.logo {

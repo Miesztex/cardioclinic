@@ -1,6 +1,7 @@
 import React from 'react';
 import { GiMedicalPackAlt } from 'react-icons/gi';
 import { FiGlobe, FiHeart } from 'react-icons/fi';
+import { RiHeartPulseLine } from 'react-icons/ri';
 
 const data = [
 	{
@@ -19,7 +20,7 @@ const data = [
 	},
 	{
 		id: 3,
-		icon: <FiHeart />,
+		icon: <RiHeartPulseLine />,
 		title: 'Most reliable service',
 		desc:
 			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum suscipit recusandae ex cumque nesciunt deleniti cum a aperiam repudiandae temporibus illum dolore omnis fugiat quibusdam, nam asperiores dolorum blanditiis aliquid. ',

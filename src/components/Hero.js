@@ -15,7 +15,7 @@ const Hero = () => {
 					xmlns='http://www.w3.org/2000/svg'
 					viewBox='0 0 1440 320'>
 					<path
-						fill='#ECA796'
+						fill='#FFE6D9'
 						fill-opacity='1'
 						d='M0,128L120,122.7C240,117,480,107,720,128C960,149,1200,203,1320,229.3L1440,256L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z'></path>
 				</svg>
@@ -24,7 +24,7 @@ const Hero = () => {
 					xmlns='http://www.w3.org/2000/svg'
 					viewBox='0 0 1440 320'>
 					<path
-						fill='#FFE6D9'
+						fill='#ECA796'
 						fill-opacity='1'
 						d='M0,32L120,53.3C240,75,480,117,720,117.3C960,117,1200,75,1320,53.3L1440,32L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z'></path>
 				</svg>
@@ -49,7 +49,7 @@ const Hero = () => {
 			</div>
 			<section className='center'>
 				<article className='typography'>
-					<h3>Best class</h3>
+					<h3 className='clr-main'>Best class</h3>
 					<h1>healthcare professionals</h1>
 					<button className='cta btn'>Book an appointment</button>
 				</article>

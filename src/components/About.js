@@ -17,14 +17,15 @@ const About = () => {
 				/>
 			</svg>
 			<div className='center'>
-				<h2 className='title mb-lg'>About us</h2>
+				<h2 className='title mb-md'>About us</h2>
 				<div className='about-container'>
 					{aboutData.map(info => {
 						const { title, desc, img } = info;
 						return (
 							<div className='about-card'>
-								<h3 className='mb-sm'>{title}</h3>
-								<p>{desc}</p>
+								<h3 className='clr-main'>{title}</h3>
+								<div className='mb-md underline'></div>
+								<p className='mb-md'>{desc}</p>
 								<img src={img} alt={title} />
 							</div>
 						);
@@ -36,12 +37,12 @@ const About = () => {
 };
 
 const StyledSection = styled.section`
+	position: relative;
+	overflow: hidden;
+	grid-column: col-start 1 / col-end 12;
 	padding-top: 5vh;
 	padding-bottom: 10vh;
 	min-height: 50vh;
-	position: relative;
-	grid-column: col-start 1 / col-end 12;
-	overflow: hidden;
 
 	.center {
 		.title {
@@ -50,10 +51,15 @@ const StyledSection = styled.section`
 
 		.about-container {
 			display: grid;
-			grid-template-columns: repeat(auto-fit, minmax(min-content, 60rem));
+			grid-template-columns: repeat(auto-fit, minmax(min-content, 50rem));
 			justify-content: center;
 			gap: 6rem;
 		}
+
+		.underline {
+			transition: all 0.3s;
+		}
+
 		.about-card {
 			padding: 3rem;
 
@@ -65,6 +71,9 @@ const StyledSection = styled.section`
 			&:hover {
 				box-shadow: var(--dark-shadow);
 				/* transform: translateY(-2px); */
+				.underline {
+					width: 15rem;
+				}
 			}
 		}
 		img {
