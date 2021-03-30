@@ -92,6 +92,7 @@ const StyledHeader = styled.header`
 			transform: scale(3);
 			transform-origin: top;
 			z-index: -2;
+			/* max-height: 10vh; */
 		}
 		&-top-upper {
 			position: absolute;
@@ -99,6 +100,8 @@ const StyledHeader = styled.header`
 			left: 0;
 			transform: translate(10%, -10%);
 			z-index: -1;
+			/* max-height: 10vh;
+			width: 100%; */
 		}
 		&-bottom-upper {
 			position: absolute;
